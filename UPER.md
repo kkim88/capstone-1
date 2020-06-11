@@ -26,9 +26,9 @@
 </h2>
 
 * Upon doing some searches, I realized while it is called "inventory management," what I need to build is more of an online retail system and switched to finding examples of those instead
-*
-*
-*
+* Many, many roadblocks were hit. Countless guides looked up.
+* Sought help from TAs, instructors, and fellow students. Tried to give some of my own.
+* Many challenges were overcome, some not.
 *
 *
 *
@@ -36,11 +36,12 @@
 <h2>
     4. Reflection / Refactor
 </h2>
-*
-*
-*
-*
-*
-*
+
+* I managed to accomplish a lot of the required functionality, but not all of it
+* Some of what I have may not be sufficient for requirements
+* Some bonus functionality achieved
+* I think I should have asked for help sooner. I did not because I thought I would be able to solve the problems myself.
+* I believe with additional time the problems regarding my add to cart feature (and by extension, my shopping cart), could have been resolved
+* Although I do think I had set a reasonable amount of time for looking for help for solutions, a longer window might have been better and I will do that for next time
 *
 *
