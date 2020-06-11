@@ -6,7 +6,7 @@ export default function ShoppingCart(props) {
     const [cart, setCart] = useState([]);
 
     const checkout = () => {
-        alert("Thank you for shopping with us");
+        prompt("Please enter your payment information");
     }
 
     return (
