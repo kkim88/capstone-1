@@ -1,9 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import data from './data.json'
 
 const inventory = data;
 
 export default function Search(props) {
+
+    // props
+
+    const { cart, setCart, items, setItems } = props;
+
+    React.useEffect(() => {
+        console.log("props in <Search />", props.items);
+    });
+
+    // search function
 
     const [searchText, setSearchText] = useState("");
     const [data, setData] = useState(inventory);
@@ -26,7 +36,10 @@ export default function Search(props) {
         }
     }
 
-    /* const addCart = (i) => {
+    // add to cart button functionality, currently does not work
+
+    const addCart = (i) => {
+        console.log("clicked, current item: ", items[i]);
         const purchasedItem = { ...items[i], quantity: 1 };
 
         setCart([...cart, purchasedItem]);
@@ -37,10 +50,15 @@ export default function Search(props) {
 
         itemsCopy.splice(i, 1, updatedItem);
 
+        console.log("updated items", itemsCopy)
+
         setData(itemsCopy);
-    } */
+    }
 
     return (
+
+        // search box
+
         <div className="search">
             Search Products: <input
                 type="text"
@@ -52,13 +70,14 @@ export default function Search(props) {
             <div className="box-container">
                 {data.map((d, i) => {
                     return <div key={i} className="box">
+                        <img src={d.image} height="150px" width="150px"></img>
                         <b>Name: </b>{d.name}<br />
                         <b>Serial: </b>{d.serial}<br />
                         <b>Price: </b>{d.price}<br />
                         <b>Manufacturer: </b>{d.manfuacturer}<br />
                         <b>Category: </b>{d.category}<br />
                         <b>In Stock: </b>{d.quantity}<br />
-                        <button /*onClick={addCart}*/>Add to Cart</button>
+                        <button onClick={addCart}>Add to Cart</button>
                     </div>
                 })}
                 <div className="clearboth"></div>
