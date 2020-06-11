@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import data from './data.json'
 
 const inventory = data;
 
-function Search() {
+export default function Search(props) {
 
     const [searchText, setSearchText] = useState("");
     const [data, setData] = useState(inventory);
@@ -26,14 +26,29 @@ function Search() {
         }
     }
 
+    /* const addCart = (i) => {
+        const purchasedItem = { ...items[i], quantity: 1 };
+
+        setCart([...cart, purchasedItem]);
+
+        const updatedItem = { ...items[i], quantity: items[i].quantity - 1 };
+
+        const itemsCopy = { ...items };
+
+        itemsCopy.splice(i, 1, updatedItem);
+
+        setData(itemsCopy);
+    } */
+
     return (
         <div className="search">
             Search Products: <input
                 type="text"
-                placeholder="Type to search..."
+                placeholder="Search for products"
                 value={searchText}
                 onChange={e => handleChange(e.target.value)}
             />
+            <p></p>
             <div className="box-container">
                 {data.map((d, i) => {
                     return <div key={i} className="box">
@@ -43,7 +58,7 @@ function Search() {
                         <b>Manufacturer: </b>{d.manfuacturer}<br />
                         <b>Category: </b>{d.category}<br />
                         <b>In Stock: </b>{d.quantity}<br />
-                        <button>Add to Cart</button>
+                        <button /*onClick={addCart}*/>Add to Cart</button>
                     </div>
                 })}
                 <div className="clearboth"></div>
@@ -52,7 +67,3 @@ function Search() {
         </div>
     );
 }
-
-
-
-export default Search;
