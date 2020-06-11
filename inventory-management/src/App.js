@@ -25,9 +25,13 @@ function App() {
       <h1>Let's Shop With React</h1>
       <nav>
         <Link to="/cart">Show Cart</Link>
+        <Link to="/search" />
       </nav>
-      <Route path="/cart">
-        <ShoppingCart />
+      <Route exact path="/search">
+        <Search cart={cart} setCart={setCart} items={items} setItems={setItems} />
+      </Route>
+      <Route exact path="/cart">
+        <ShoppingCart cart={cart} setCart={setCart} />
       </Route>
       <p></p>
       <Search />
