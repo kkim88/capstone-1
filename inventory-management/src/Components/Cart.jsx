@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ShoppingCart(props) {
 
-    const [cart, setCart] = useState([]);
+    const { cart, setCart } = props;
+
+    React.useEffect(() => {
+        console.log("props in <ShoppingCart/ >", props.cart);
+    });
 
     const checkout = () => {
         prompt("Please enter your payment information");
