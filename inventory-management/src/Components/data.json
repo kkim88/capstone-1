@@ -5,7 +5,8 @@
         "price": 800,
         "manfuacturer": "Apple",
         "category": "Technology",
-        "quantity": 5
+        "quantity": 5,
+        "image": "/iphone.jpg"
     },
     {
         "name": "Purse",
@@ -13,39 +14,44 @@
         "price": 200,
         "manfuacturer": "Prada",
         "category": "Accessories",
-        "quantity": 12
+        "quantity": 12,
+        "image": "/prada.jpg"
     },
     {
         "name": "Table",
         "serial": 222222,
-        "price": 500,
+        "price": 30,
         "manfuacturer": "IKEA",
         "category": "Furniture",
-        "quantity": 20
+        "quantity": 20,
+        "image": "/table.jpg"
     },
     {
-        "name": "Harry Potter",
+        "name": "HP Special Edition Set",
         "serial": 333333,
-        "price": 10,
+        "price": 300,
         "manfuacturer": "Scholastic",
         "category": "Books",
-        "quantity": 50
+        "quantity": 3,
+        "image": "/hp.jpg"
     },
     {
         "name": "Doll",
         "serial": 444444,
-        "price": 5,
+        "price": 10,
         "manfuacturer": "Mattel",
         "category": "Toys",
-        "quantity": 10
+        "quantity": 10,
+        "image": "/doll.jpg"
     },
     {
         "name": "Paperclips",
         "serial": 555555,
-        "price": 3,
+        "price": 8,
         "manfuacturer": "Acco",
         "category": "Office",
-        "quantity": 18
+        "quantity": 18,
+        "image": "/paperclips.jpg"
     },
     {
         "name": "Dog Food",
@@ -53,7 +59,8 @@
         "price": 15,
         "manfuacturer": "IAMS",
         "category": "Pets",
-        "quantity": 7
+        "quantity": 7,
+        "image": "/iams.jpg"
     },
     {
         "name": "Lipstick",
@@ -61,7 +68,8 @@
         "price": 8,
         "manfuacturer": "Maybelline",
         "category": "Cosmetics",
-        "quantity": 14
+        "quantity": 14,
+        "image": "/lipstick.jpg"
     },
     {
         "name": "Shirt",
@@ -69,7 +77,8 @@
         "price": 12,
         "manfuacturer": "Polo Ralph Lauren",
         "category": "Clothing",
-        "quantity": 28
+        "quantity": 28,
+        "image": "/polo.jpg"
     },
     {
         "name": "Microwave",
@@ -77,6 +86,7 @@
         "price": 500,
         "manfuacturer": "Frigidaire",
         "category": "Appliances",
-        "quantity": 20
+        "quantity": 20,
+        "image": "/microwave.jpg"
     }
 ]
