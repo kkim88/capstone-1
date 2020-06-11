@@ -1,28 +1,22 @@
-import React from 'react';
-import CartItem from './CartItem/CartItem';
-import './Cart.css';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Cart({ itemsInCart, totalCost }) {
+export default function ShoppingCart(props) {
+
+    const [cart, setCart] = useState([]);
+
+    const checkout = () => {
+        alert("Thank you for shopping with us");
+    }
+
     return (
-        <div className="Cart">
-            <h2 className="Cart-title">Your shopping cart</h2>
-            {itemsInCart.length > 0 ? (
-                <div>
-                    {itemsInCart.map(item => (
-                        <CartItem
-                            key={item.id}
-                            title={item.title}
-                            cost={item.price * item.quantity}
-                            quantity={item.quantity}
-                        />
-                    ))}
-                    <div className="Cart-total-cost">
-                        Total cost: ${totalCost.toFixed(2)}
-                    </div>
-                </div>
-            ) : (
-                    <div>Your cart is empty</div>
-                )}
+        <div>
+            <h2>Your Cart</h2>
+            <nav>
+                <Link to="/">Hide Cart</Link>
+            </nav>
+            {cart.map(item => <div>{item.name}</div>)}
+            <button onClick={checkout}>Checkout</button>
         </div>
     );
 }
