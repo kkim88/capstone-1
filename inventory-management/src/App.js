@@ -3,11 +3,21 @@ import Search from './Components/Search'
 import ShoppingCart from './Components/Cart'
 import './App.css';
 import { Link, Route } from 'react-router-dom';
+import data from './Components/data.json';
 
 function App() {
 
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    setItems(data);
+  }, []);
+
+  useEffect(() => {
+    console.log("Items in <App/>", items);
+    console.log("cart in <App/>", cart);
+  }, []);
 
   return (
     <div className="App">
