@@ -5,10 +5,7 @@
         "price": 800,
         "manfuacturer": "Apple",
         "category": "Technology",
-        "quantity": 5,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 5
     },
     {
         "name": "Purse",
@@ -16,10 +13,7 @@
         "price": 200,
         "manfuacturer": "Prada",
         "category": "Accessories",
-        "quantity": 12,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 12
     },
     {
         "name": "Table",
@@ -27,10 +21,7 @@
         "price": 500,
         "manfuacturer": "IKEA",
         "category": "Furniture",
-        "quantity": 20,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 20
     },
     {
         "name": "Harry Potter",
@@ -38,10 +29,7 @@
         "price": 10,
         "manfuacturer": "Scholastic",
         "category": "Books",
-        "quantity": 50,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 50
     },
     {
         "name": "Doll",
@@ -49,21 +37,15 @@
         "price": 5,
         "manfuacturer": "Mattel",
         "category": "Toys",
-        "quantity": 10,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 10
     },
     {
         "name": "Paperclips",
         "serial": 555555,
-        "price": 500,
+        "price": 3,
         "manfuacturer": "Acco",
         "category": "Office",
-        "quantity": 18,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 18
     },
     {
         "name": "Dog Food",
@@ -71,10 +53,7 @@
         "price": 15,
         "manfuacturer": "IAMS",
         "category": "Pets",
-        "quantity": 7,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 7
     },
     {
         "name": "Lipstick",
@@ -82,10 +61,7 @@
         "price": 8,
         "manfuacturer": "Maybelline",
         "category": "Cosmetics",
-        "quantity": 14,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 14
     },
     {
         "name": "Shirt",
@@ -93,10 +69,7 @@
         "price": 12,
         "manfuacturer": "Polo Ralph Lauren",
         "category": "Clothing",
-        "quantity": 28,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 28
     },
     {
         "name": "Microwave",
@@ -104,9 +77,6 @@
         "price": 500,
         "manfuacturer": "Frigidaire",
         "category": "Appliances",
-        "quantity": 20,
-        "inCart": false,
-        "count": 0,
-        "total": 0
+        "quantity": 20
     }
 ]
