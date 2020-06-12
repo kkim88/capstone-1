@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import data from './data.json'
 
+// assign data to variable
+
 const inventory = data;
 
 export default function Search(props) {
@@ -22,6 +24,8 @@ export default function Search(props) {
         setSearchText(value);
         filterData(value);
     };
+
+    // convert string to lowercase, filter for matches
 
     const filterData = (value) => {
         const lowercasedValue = value.toLowerCase().trim();
@@ -58,7 +62,7 @@ export default function Search(props) {
 
     return (
 
-        // search box
+        // search box + product container + message for no matches
 
         <div className="search">
             Search Products: <input
