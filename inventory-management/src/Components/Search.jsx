@@ -7,11 +7,11 @@ export default function Search(props) {
 
     // props
 
-    const { cart, setCart, items, setItems } = props;
+    const { cart, setCart } = props;
 
     React.useEffect(() => {
-        console.log("props in <Search />", props.items);
-    });
+        console.log("cart props <Search />", props.cart)
+    })
 
     // search function
 
@@ -39,20 +39,21 @@ export default function Search(props) {
     // add to cart button functionality, currently does not work
 
     const addCart = (i) => {
-        console.log("clicked, current item: ", items[i]);
-        const purchasedItem = { ...items[i], quantity: 1 };
+
+        console.log("clicked, current item: ", data[i]);
+        const purchasedItem = { ...data[i], quantity: 1 };
 
         setCart([...cart, purchasedItem]);
 
-        const updatedItem = { ...items[i], quantity: items[i].quantity - 1 };
+        const updatedItem = { ...data[i], quantity: data[i].quantity - 1 };
 
-        const itemsCopy = { ...items };
+        const dataCopy = { ...data };
 
-        itemsCopy.splice(i, 1, updatedItem);
+        dataCopy.splice(i, 1, updatedItem);
 
-        console.log("updated items", itemsCopy)
+        console.log("updated items", dataCopy)
 
-        setData(itemsCopy);
+        setData(dataCopy);
     }
 
     return (
