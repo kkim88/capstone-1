@@ -1,0 +1,92 @@
+[
+    {
+        "name": "iPhone",
+        "serial": 123456,
+        "price": 800,
+        "manfuacturer": "Apple",
+        "category": "Technology",
+        "quantity": 5,
+        "image": "/iphone.jpg"
+    },
+    {
+        "name": "Purse",
+        "serial": 111111,
+        "price": 200,
+        "manfuacturer": "Prada",
+        "category": "Accessories",
+        "quantity": 12,
+        "image": "/prada.jpg"
+    },
+    {
+        "name": "Table",
+        "serial": 222222,
+        "price": 30,
+        "manfuacturer": "IKEA",
+        "category": "Furniture",
+        "quantity": 20,
+        "image": "/table.jpg"
+    },
+    {
+        "name": "HP Special Edition Set",
+        "serial": 333333,
+        "price": 300,
+        "manfuacturer": "Scholastic",
+        "category": "Books",
+        "quantity": 3,
+        "image": "/hp.jpg"
+    },
+    {
+        "name": "Doll",
+        "serial": 444444,
+        "price": 10,
+        "manfuacturer": "Mattel",
+        "category": "Toys",
+        "quantity": 10,
+        "image": "/doll.jpg"
+    },
+    {
+        "name": "Paperclips",
+        "serial": 555555,
+        "price": 8,
+        "manfuacturer": "Acco",
+        "category": "Office",
+        "quantity": 18,
+        "image": "/paperclips.jpg"
+    },
+    {
+        "name": "Dog Food",
+        "serial": 666666,
+        "price": 15,
+        "manfuacturer": "IAMS",
+        "category": "Pets",
+        "quantity": 7,
+        "image": "/iams.jpg"
+    },
+    {
+        "name": "Lipstick",
+        "serial": 777777,
+        "price": 8,
+        "manfuacturer": "Maybelline",
+        "category": "Cosmetics",
+        "quantity": 14,
+        "image": "/lipstick.jpg"
+    },
+    {
+        "name": "Shirt",
+        "serial": 888888,
+        "price": 12,
+        "manfuacturer": "Polo Ralph Lauren",
+        "category": "Clothing",
+        "quantity": 28,
+        "image": "/polo.jpg"
+    },
+    {
+        "name": "Microwave",
+        "serial": 999999,
+        "price": 500,
+        "manfuacturer": "Frigidaire",
+        "category": "Appliances",
+        "quantity": 20,
+        "image": "/microwave.jpg"
+    }
+]
