@@ -17,7 +17,7 @@ export default function ShoppingCart(props) {
         <div>
             <h2>Your Cart</h2>
             <nav>
-                <Link to="/">Hide Cart</Link>
+                <Link to="/"><img src='/shopping-cart-black-shape.png' width="18px" height="18px"></img>Hide Cart</Link>
             </nav>
             {cart.map(item => <div>{item.name}</div>)}
             <button onClick={checkout}>Checkout</button>
